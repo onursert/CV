@@ -1,0 +1,32 @@
+\documentclass[11pt,a4paper,roman]{moderncv}
+\usepackage[english]{babel}
+\moderncvstyle{classic}
+\moderncvcolor{green}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
+\usepackage[document]{ragged2e}
+\usepackage{lipsum}
+
+\name{Name}{Surname}
+\phone[mobile]{123456789}
+\email{mail}
+
+\begin{document}
+
+\recipient{To whom it may concern,}{}
+\date{\today}
+\opening{Hi!}
+\closing{Thanks in advance!}
+\enclosure[Attachment]{CV}
+\makelettertitle
+
+\justifying
+\lipsum[20]
+
+\lipsum[20]
+
+\vspace{0.5cm}
+
+\makeletterclosing
+
+\end{document}

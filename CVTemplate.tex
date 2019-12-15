@@ -1,0 +1,54 @@
+\documentclass{article}
+
+% package
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+% global
+\pagestyle{empty}
+\geometry{margin=0.5in}
+\setlength\parindent{9pt}
+\setlist{nosep}
+\renewcommand\labelitemi{--}
+
+% command
+\newcommand{\name}[1]{
+    \begin{center}
+        \vspace{-0.2cm}\section*{\huge #1}\vspace{-0.2cm}
+    \end{center}
+}
+\newcommand{\info}[1]{
+    \begin{center}
+        \vspace{-0.2cm}#1\vspace{-0.2cm}
+    \end{center}
+}
+\newcommand{\cvsection}[1]{
+    \vspace{-0.2cm}\section*{#1}\vspace{-0.2cm}\hrule\vspace{0.2cm}
+}
+
+% document
+\begin{document}
+
+% personal info
+\name{Name Surname}
+\info{
+Address \textcolor[HTML]{a9a9a9}{|}
+Telephone \textcolor[HTML]{a9a9a9}{|}
+\href{mailto:mail}{\textcolor[HTML]{4682b4}{Mail}} \textcolor[HTML]{a9a9a9}{|}
+\href{webpage}{\textcolor[HTML]{4682b4}{Web Page}} \textcolor[HTML]{a9a9a9}{|}
+\href{linkedin}{\textcolor[HTML]{4682b4}{LinkedIn}}
+}
+
+% sections
+
+\cvsection{CV Section}
+\textbf{Section Header}, Section Text  \hfill Start Date–End Date
+
+\textbf{Section Header}, Section Text  \hfill Start Date–End Date
+
+\end{document}
